@@ -1,0 +1,57 @@
+#particles-js, #particles-js > canvas {
+	position: absolute;
+	width: 100vw;
+	height: 45vh;
+	background-color: #1a237e;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.beginning-section {
+	display: table;
+	width: 100vw;
+}
+
+.coding-font {
+	width: 100vw;
+	font-family: 'Inconsolata', monospace;
+	color: white;
+	margin: 0;
+	font-size: 8vh;
+	position: absolute;
+	text-shadow: #000 0px 1px 2px;
+	top: 15vh;
+}
+
+/*blinking cursor css*/
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+/*end blinking cursor*/
+
+@media screen and (max-width: 600px)
+{
+	.coding-font {
+		font-size: 4vh;
+	}
+}
