@@ -18,7 +18,32 @@ $(document).ready(function() {
 		strings: [
 			details_string,
 		],
-		typeSpeed: 10,
+		typeSpeed: 0,
+	});
+	$("#quotes-print").typed({
+		strings: [
+			"Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
+			"Stay Hungry. Stay Foolish.",
+			"Nothing is work unless you'd rather be doing something else.",
+			"The past cannot be changed. The future is yet in your power.",
+			"If you're going through hell, keep going."
+		],
+		typeSpeed: 0,
+		loop: true,
+		backDelay: 2000,
+		backSpeed: 0,
+		shuffle: true
+	});
+	$("#nitkgal").vegas({
+		slides: [
+			{ src: "images/nitk_gallery/3.jpg" },
+			{ src: "images/nitk_gallery/5.jpg" },
+			{ src: "images/nitk_gallery/4.jpg" },
+			{ src: "images/nitk_gallery/2.jpg" },
+			{ src: "images/nitk_gallery/1.jpg" },
+		],
+		overlay: 'images/overlays/08.png',
+		animation: 'kenburns'
 	});
 	$('#terminal-like').height($('#aboutmecontent').height());
 	if (screen.width > 600)
@@ -28,10 +53,10 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-	if ($('#aboutmecontainer').offset().top - $(window).scrollTop() <= 20) {
-		$('.navigation-bar').removeClass('transparent').addClass('indigo').addClass('darken-4');
+	if (($('#aboutmecontainer').offset().top - $(window).scrollTop() <= 40) && ($("#nitkgal").offset().top - $(window).scrollTop() > 40)) {
+		$('.nav-color-change').removeClass('white-text').addClass('indigo-text').addClass('text-darken-4');
 	}
 	else {
-		$('.navigation-bar').removeClass('indigo').removeClass('darken-4').addClass('transparent');
+		$('.nav-color-change').removeClass('indigo-text').removeClass('text-darken-4').addClass('white-text');
 	}
 });

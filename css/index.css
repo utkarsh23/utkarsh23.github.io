@@ -34,7 +34,7 @@ body {
 	margin-bottom: 2vh;
 }
 
-.navigation-bar {
+.nav-color-change {
 	-webkit-transition: all .3s ease-out;
 	-o-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -58,8 +58,8 @@ body {
 }
 
 .wctext {
-	font-family: 'Maven Pro', sans-serif;
-	font-size: 9vh;
+	font-family: 'Kurale', cursive;
+	font-size: 8.5vh;
 }
 
 .aboutme {
@@ -97,6 +97,23 @@ body {
 	font-size: 1.3em;
 }
 
+#nitkgal{
+	height: 90vh;
+}
+
+#imggal {
+	position: relative;
+}
+
+.life {
+	position: absolute;
+	bottom: 7vh;
+	right: 10vw;
+	font-size: 6.5vh;
+	color: white;
+	font-family: 'Shadows Into Light', cursive;
+}
+
 /*blinking cursor css*/
 .typed-cursor{
 	opacity: 1;
@@ -121,6 +138,12 @@ body {
 }
 /*end blinking cursor*/
 
+.typed-fade-out{
+	opacity: 0;
+	animation: 0;
+	transition: opacity .25s;
+}
+
 @media screen and (max-width: 992px) {
 	.coding-font {
 		top: 10vh;
@@ -131,7 +154,7 @@ body {
 	}
 
 	#particles-js, #particles-js > canvas, .beginning-section {
-		height: 73vh;
+		height: 65vh;
 	}
 
 	#about-terminal {
