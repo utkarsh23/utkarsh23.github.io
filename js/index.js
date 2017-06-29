@@ -42,7 +42,7 @@ $(document).ready(function() {
 			{ src: "images/nitk_gallery/2.jpg" },
 			{ src: "images/nitk_gallery/1.jpg" },
 		],
-		overlay: 'images/overlays/08.png',
+		overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/08.png',
 		animation: 'kenburns'
 	});
 	$('#terminal-like').height($('#aboutmecontent').height());
