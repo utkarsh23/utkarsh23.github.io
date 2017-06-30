@@ -23,9 +23,9 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
 	if ($('#projectscontainer').offset().top - $(window).scrollTop() <= 40) {
-		$('.nav-color-change').css('color', '#2c2e43');
+		$('.navigation').removeClass('transparent').css('background-color', '#2c2e43');
 	}
 	else {
-		$('.nav-color-change').css('color', 'white');
+		$('.navigation').addClass('transparent').css('background-color', 'inherit');
 	}
 });

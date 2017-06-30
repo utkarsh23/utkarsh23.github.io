@@ -55,10 +55,21 @@ body {
 	font-weight: 600;
 }
 
-.nav-color-change {
+.navigation {
 	-webkit-transition: all .3s ease-out;
 	-o-transition: all .3s ease-out;
 	transition: all .3s ease-out;
+}
+
+.tabs .indicator {
+	background-color: #2c2e43;
+}
+
+.tab > a {
+	color: #2c2e43 !important;
+	font-size: 1.15em !important;
+	font-family: 'Fauna One', serif;
+	font-weight: 600 !important;
 }
 
 /*blinking cursor css*/
@@ -117,3 +128,4 @@ body {
 	#bubbles-js, #bubbles-js > canvas, .beginning-section {
 		height: 50vh;
 	}
+}
