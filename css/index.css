@@ -45,11 +45,11 @@ body {
 }
 
 .side-nav {
-	width: 30%;
+	width: 35%;
 }
 
 #sidenav-overlay {
-	background-color: rgba(0,0,0,0);
+	z-index: 1;
 }
 
 .side-nav > li > a {
@@ -94,7 +94,7 @@ body {
 .det-div {
 	padding: 10px;
 	font-family: 'Inconsolata', monospace;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 #nitkgal{
@@ -168,7 +168,7 @@ body {
 	}
 
 	.wctext {
-		font-size: 7.5vh;
+		font-size: 6.5vh;
 		line-height: 1;
 		margin-bottom: 5vh;
 	}

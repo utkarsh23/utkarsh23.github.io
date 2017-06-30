@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.materialboxed').materialbox();
 	particlesJS.load('particles-js', 'js/particles.json', function() {
-		console.log('callback - particles.js config loaded');
+		console.log('callback - particles.json config loaded');
 	});
 	var details_string = "Name: Utkarsh Patil<br>";
 	details_string += "Age: 19<br><br>";
@@ -46,6 +46,7 @@ $(document).ready(function() {
 		animation: 'kenburns'
 	});
 	$('#terminal-like').height($('#aboutmecontent').height());
+	$('#inspired-id').height($('#links-id').height());
 	if (screen.width > 600)
 	{
 		$('#black-screen').height($('#terminal-like').height() - 25);
