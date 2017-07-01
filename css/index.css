@@ -114,6 +114,18 @@ body {
 	font-family: 'Shadows Into Light', cursive;
 }
 
+.contact-para {
+	margin-bottom: 0;
+}
+
+.copyright-text {
+	font-size: 1.1rem;
+}
+
+.media-icons {
+	text-align: right;
+}
+
 /*blinking cursor css*/
 .typed-cursor{
 	opacity: 1;
@@ -183,5 +195,18 @@ body {
 
 	#about-terminal, #black-screen, #terminal-like {
 		max-height: 450px;
+	}
+
+	.footer-contact {
+		margin-bottom: 10px;
+	}
+
+	.copyright-text {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.media-icons {
+		text-align: center;
 	}
 }
