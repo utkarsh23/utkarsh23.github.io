@@ -13,15 +13,18 @@
 	<!-- CSS Files -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kurale|Quicksand|Zilla+Slab|Fauna+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kurale|Quicksand|Zilla+Slab|Fauna+One|Bitter" rel="stylesheet">
 
 	<!-- Javascript Files -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" type="text/javascript"></script>
+	<script src="js/projects.json" type="text/javascript"></script>
 	<script src="js/projects.js" type="text/javascript"></script>
 </head>
 <body>
@@ -37,12 +40,12 @@
 							<ul class="right hide-on-med-and-down">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="projects.html">Projects</a></li>
-								<li><a href="#!">Bayern</a></li>
+								<li><a href="resume.html">Resume</a></li>
 							</ul>
 							<ul class="side-nav center-align" id="mobile-demo">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="projects.html">Projects</a></li>
-								<li><a href="#!">Bayern</a></li>
+								<li><a href="resume.html">Resume</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -60,72 +63,28 @@
 			<div class="row">
 				<div class="col s12" style="padding: 0;">
 					<ul class="tabs">
-						<li class="tab col s3">
+						<li class="tab col s2 l2 offset-l1">
 							<a href="#tab1" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Python">Python</a>
 						</li>
-						<li class="tab col s3">
+						<li class="tab col s2 l2">
+							<a href="#tab5" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Artificial Intelligence / Machine Learning">AI / ML</a>
+						</li>
+						<li class="tab col s2 l2">
 							<a href="#tab2" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Web Development">Web Development</a>
 						</li>
-						<li class="tab col s3">
+						<li class="tab col s2 l2">
 							<a href="#tab3" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Competitive Coding">Competitive Coding</a>
 						</li>
-						<li class="tab col s3">
+						<li class="tab col s2 l2">
 							<a href="#tab4" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Others">Others</a>
 						</li>
 					</ul>
 				</div>
-				<div id="tab1" class="col s12">
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-					<h1>Filler1</h1>
-				</div>
-				<div id="tab2" class="col s12">
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-					<h1>Filler2</h1>
-				</div>
-				<div id="tab3" class="col s12">
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-					<h1>Filler3</h1>
-				</div>
-				<div id="tab4" class="col s12">
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-					<h1>Filler4</h1>
-				</div>
+				<div id="tab1" class="col s12"></div>
+				<div id="tab5" class="col s12"></div>
+				<div id="tab2" class="col s12"></div>
+				<div id="tab3" class="col s12"></div>
+				<div id="tab4" class="col s12"></div>
 			</div>
 		</div>
 	</main>
@@ -149,7 +108,7 @@
 					<ul>
 						<li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
 						<li><a class="grey-text text-lighten-3" href="projects.html">Projects</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Bayern</a></li>
+						<li><a class="grey-text text-lighten-3" href="resume.html">Resume</a></li>
 					</ul>
 				</div>
 			</div>
