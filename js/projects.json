@@ -90,7 +90,7 @@ var web_dev = [
 		"name": "ChangePay",
 		"image": "images/project_covers/changepay.jpg",
 		"description": "ChangePay is a college startup which aims to build a Cash-less, Card-less and Mobile-less payment system. I've worked on the back-end of their website.",
-		"tags": ["python", "django", "HTML", "CSS", "Bootstrap", "Back-End"],
+		"tags": ["python", "django", "HTML", "CSS", "Bootstrap"],
 		"github": "",
 		"download": "",
 		"link": ["", "", ""],

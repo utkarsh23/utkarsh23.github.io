@@ -26,7 +26,9 @@ $(document).ready(function() {
 			"Stay Hungry. Stay Foolish.",
 			"Nothing is work unless you'd rather be doing something else.",
 			"The past cannot be changed. The future is yet in your power.",
-			"If you're going through hell, keep going."
+			"If you're going through hell, keep going.",
+			"You got one shot, do not miss your chance to blow!",
+			"If opportunity doesn't knock, build a door."
 		],
 		typeSpeed: 0,
 		loop: true,
