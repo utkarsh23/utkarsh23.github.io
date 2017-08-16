@@ -72,7 +72,7 @@ var web_dev = [
 		"name": "NITK Website",
 		"image": "images/project_covers/nitk.png",
 		"description": "I was a part of the team that worked on front-end of our college website.",
-		"tags": ["HTML", "CSS", "Javascript", "PHP", "Bootstrap", "Front-End", "Back-End"],
+		"tags": ["HTML", "CSS", "Javascript", "Bootstrap", "Front-End", "Back-End"],
 		"github": "",
 		"download": "",
 		"link": ["", "", ""],
