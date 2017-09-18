@@ -26,6 +26,7 @@ body {
 	position: absolute;
 	text-shadow: #000 0px 1px 2px;
 	top: 10vh;
+	pointer-events: none;
 }
 
 .profile {
