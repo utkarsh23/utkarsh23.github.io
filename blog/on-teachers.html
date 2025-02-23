@@ -17,6 +17,15 @@
         .blog-post-meta {
             margin-bottom: 20px;
         }
+
+        .chart-wrapper {
+            margin-bottom: 25px;
+        }
+
+        .video-wrapper {
+            text-align: center;
+            margin-bottom: 25px;
+        }
     </style>
 </head>
 
@@ -46,6 +55,63 @@
             <div class="main-container-left">
                 <h1 class="blog-header"># On Teachers</h1>
                 <div class="blog-post-meta">🕰️ Feb 21<sup>st</sup>, 2025</div>
+                <p>As I write this, I find myself in the fourth day of mourning my grandfather's passing. His death
+                    resulted from multiple brain hemorrhages.</p>
+                <p>When I think of my grandfather, the words "teacher" and "professor" immediately come to mind. He was
+                    a Biology professor at Pratap College in Amalner, a small town nestled along the banks of the Bori
+                    River in Maharashtra. For years, Amalner has served as a significant educational hub for neighboring
+                    cities and towns. His students admired him for various reasons, but primarily for his exceptional
+                    teaching skills and calm demeanor.</p>
+                <p>Like many professors, my grandfather held private tuition sessions at home to supplement his income.
+                    How much extra income? I researched and concluded that it didn't matter; the pay range for teachers
+                    is abysmally low in India. Consider this stark illustration of teacher salaries across various
+                    countries worldwide:</p>
+                <div class="chart-wrapper"><canvas id="avg-annual-pay-chart"></canvas></div>
+                <p>I realize that this perspective is overly simplistic, and a real in-depth analysis would
+                    include statistics broken down by experience, subject matter, and the level of students (class of
+                    school or year of college). It is also important to consider the relative pay-per-capita in
+                    comparison with other professions in the country. While all of these points are indeed valid, most
+                    of us can agree that teachers are not compensated fairly.</p>
+                <p>Why don’t we give the folks we call our "gurus" a respectable wage? Why are researchers so poorly
+                    funded? How has the teaching profession stooped to such lows? I firmly believe that the brightest
+                    minds in every profession should be encouraged to pursue teaching and training roles. Of course,
+                    there’s the question of whether all subject-matter experts excel at the art of teaching. This is a
+                    spicy topic that could fuel hours of debate. Finding individuals who are both exceptional subject
+                    matter experts and effective teachers is indeed a small subset and unlikely to meet India's massive
+                    demand for educators. However, we can all agree that students are more likely to listen to someone
+                    they respect and admire.</p>
+                <p>True teachers cherish the opportunity to explain concepts and witness their students' understanding.
+                    Teaching is an art — a creative and fulfilling endeavor that is often one of humanity's
+                    lesser-appreciated experiences. Engaging with another individual in the process of explaining,
+                    exchanging ideas, thinking critically, and debating back-and-forth can lead to those occasional
+                    "lightbulb" moments. These "lightbulb" moments are delightful experiences that teachers long to see
+                    in their students. They occur when students grapple with various complex and sometimes conflicting
+                    ideas, ultimately fitting together just right in their minds. This revelation unveils the bigger
+                    picture, putting to rest doubts, hesitations, and questions.</p>
+                <p>My contrarian take on teaching stems from the ideas presented above: The responsibility for effective
+                    learning lies equally with the teacher, if not more so than with the student. If students lack
+                    interest in a subject, it is invariably the teacher's responsibility to present it in an engaging
+                    manner. For instance, many individuals struggle to appreciate the inherent beauty of mathematics;
+                    however, conversing with mathematicians reveals various ways they find satisfaction and pleasure
+                    within their discipline. I am reminded of a lecture from professor Walter Lewin, who put
+                    his life on the line to explain a physics concept to his students. Watch the video below:</p>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/77ZF50ve6rs?si=LlCCRXXH28hLGCAX"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p>Teaching is one of humanity's most noble professions. While this essay primarily discusses classroom
+                    teachers, I have found that some of the best educators are those in workplace settings without
+                    formal teaching titles. These individuals—colleagues, team leaders, or managers — excel in their
+                    crafts and inspire those around them to push boundaries and strive for greatness.</p>
+                <p>This spirit of mentorship and dedication to education was vividly embodied by my grandpa. My mom
+                    and grandma often told me that his study notes were famously regarded as some of the best in the
+                    region. This reputation led many students to line up at his house, eager to join his private tuition
+                    sessions. My grandfather once shared how many students couldn't afford their fees, yet he welcomed
+                    them into his classes without hesitation. His actions were not merely about helping those in need;
+                    rather, he believed that while fees might be negotiable, the value of learning was not.</p>
+                <p>- Dedicated to Prof. D. S. Patil, my loving grandpa. Om Shanti. 🙏</p>
             </div>
             <div class="main-container-right">
                 <div>
@@ -68,6 +134,38 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('avg-annual-pay-chart');
+        Chart.defaults.backgroundColor = '#a1b56c';
+        Chart.defaults.borderColor = 'transparent';
+        Chart.defaults.color = '#d8d8d8';
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Luxembourg', 'Germany', 'Netherlands', 'Canada', 'Australia', 'United States', 'India'],
+                datasets: [{
+                    label: 'Avg. Annual Salary (in USD)',
+                    data: [104846, 85049, 70899, 70331, 68608, 63531, 6500],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                elements: {
+                    bar: {
+                        borderWidth: 2,
+                    }
+                },
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            },
+        });
+    </script>
 </body>
 
 </html>
